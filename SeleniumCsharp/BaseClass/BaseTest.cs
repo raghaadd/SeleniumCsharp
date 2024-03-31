@@ -20,6 +20,18 @@ namespace SeleniumCsharp.BaseClass
 
 
         }
+        //[SetUp]
+        //public void setUp()
+        //{
+        //    driver.Manage().Window.Maximize();
+        //    driver.Navigate().GoToUrl("https://borsheims.com/");
+        //}
+        //[TearDown]  
+        //public void tearDown() 
+        //{
+        //    Thread.Sleep(5000);
+        //    driver.Dispose();
+        //}
 
         [OneTimeTearDown]
         public void Close()
