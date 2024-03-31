@@ -12,8 +12,6 @@ namespace SeleniumCsharp
         [SetUp]
         public void Setup()
         {
-            // Initialize your driver here
-            // Example:
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
             driver.Navigate().GoToUrl("https://borsheims.com/");
@@ -186,6 +184,7 @@ namespace SeleniumCsharp
                 package.Save();
             }
         }
+
         [OneTimeTearDown]
         public void Close()
         {

@@ -22,8 +22,6 @@ namespace SeleniumCsharp
         [SetUp]
         public void Setup()
         {
-            // Initialize your driver here
-            // Example:
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
             driver.Navigate().GoToUrl("https://borsheims.com/");
@@ -62,8 +60,7 @@ namespace SeleniumCsharp
                 {
                     Console.WriteLine("User already registered.");
                     WriteStatusToExcel(3,"Failed");
-                    //driver.Dispose();
-                    return; // Exit method without proceeding
+                    return; 
                 }
                 driver.FindElement(By.Id("Customer_LoginEmail")).SendKeys(email);
                 driver.FindElement(By.Id("l-Customer_Password")).SendKeys(password);
@@ -173,10 +170,6 @@ namespace SeleniumCsharp
                 Console.WriteLine(e);
                 throw;
             }
-
-            //CloseBrowser();
-
-
         }
 
          // Close the browser

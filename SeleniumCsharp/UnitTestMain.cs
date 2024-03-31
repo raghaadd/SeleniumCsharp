@@ -40,7 +40,6 @@ namespace SeleniumCsharp
             }
         }
       
-        
         public void executeTestCase(int rowIndex)
         {
             switch(rowIndex)
@@ -97,7 +96,5 @@ namespace SeleniumCsharp
 
             }
         }
-
-
     }
 }
